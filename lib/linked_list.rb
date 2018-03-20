@@ -21,5 +21,7 @@ class LinkedList
     end
   end
 
-
+  def to_string
+    "doop"
+  end
 end
