@@ -31,6 +31,6 @@ class LinkedListTest < Minitest::Test
     ll = LinkedList.new
     ll.append("doop")
     ll.append("deep")
-    assert_equal "doop", ll.to_string
+    assert_equal "doop deep", ll.to_string
   end
 end
