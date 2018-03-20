@@ -93,4 +93,18 @@ class LinkedListTest < Minitest::Test
     assert_equal "shi", ll.find(2, 1)
     assert_equal "woo shi shu", ll.find(1, 3)
   end
+
+  def test_includes?
+    ll = LinkedList.new
+
+    ll.append("deep")
+    ll.append("woo")
+    ll.append("shi")
+    ll.append("shu")
+    ll.append("blop")
+
+    assert_equal true, ll.includes?("deep")
+    assert_equal false, ll.includes?("dep")
+  end
+
 end
