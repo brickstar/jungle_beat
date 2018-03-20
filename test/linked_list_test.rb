@@ -17,15 +17,20 @@ class LinkedListTest < Minitest::Test
     assert_nil ll.head
   end
 
-  def test_it_can_append_to_the_list
+  def test_it_can_append_multiple_nodes_to_the_list
     ll = LinkedList.new
-    node = ll.append("doop")
-    assert_equal 'doop', node.data
-    assert_nil node.next_node
+    ll.append("doop")
+    assert_equal "doop", ll.head.data
+    assert_nil ll.head.next_node
+    ll.append("deep")
+    assert_equal "deep", ll.head.next_node.data
+    assert_nil ll.head.next_node.next_node
   end
 
   def test_to_string
     ll = LinkedList.new
+    ll.append("doop")
+    ll.append("deep")
     assert_equal "doop", ll.to_string
   end
 end
