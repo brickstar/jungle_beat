@@ -108,4 +108,23 @@ class LinkedListTest < Minitest::Test
     assert_equal false, ll.includes?("dep")
   end
 
+  def test_it_can_append_to_empty_list
+
+  end
+
+  def test_next_node_after_head_is_nil
+
+  end
+
+  def test_list_can_count
+
+  end
+
+  def test_it_can_append_twice
+
+  end
+
+  def test_it_can_append_multiple_times
+
+  end
 end
