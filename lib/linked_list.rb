@@ -23,12 +23,12 @@ class LinkedList
 
   def to_string
     current = @head
-    beats = "#{@head.data}"
+    phat_beats = "#{@head.data}"
     until current.next_node.nil?
       current = current.next_node
-      beats << " #{current.data}"
+      phat_beats << " #{current.data}"
     end
-    beats
+    phat_beats
   end
 
   def prepend(data)

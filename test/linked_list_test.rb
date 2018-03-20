@@ -19,6 +19,7 @@ class LinkedListTest < Minitest::Test
 
   def test_it_can_append_multiple_nodes_to_the_list
     ll = LinkedList.new
+
     ll.append("doop")
     assert_equal "doop", ll.head.data
     assert_nil ll.head.next_node
@@ -76,5 +77,20 @@ class LinkedListTest < Minitest::Test
     ll.insert(1, "woo")
     assert_equal "dop woo plop suu", ll.to_string
     assert_equal 4, ll.count
+  end
+
+  def test_find
+    skip
+    ll = LinkedList.new
+
+    ll.append("deep")
+    ll.append("woo")
+    ll.append("shi")
+    ll.append("shu")
+    ll.append("blop")
+
+    assert_equal "deep woo shi shu blop", ll.to_string
+    assert_equal "shi", ll.find(2, 1)
+    assert_equal "woo shi shu", ll.find(1, 3)
   end
 end
