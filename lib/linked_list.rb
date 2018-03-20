@@ -24,15 +24,23 @@ class LinkedList
     end
   end
 
-  def to_string
-    current = @head
-    phat_beats = "#{@head.data}"
-    until current.next_node.nil?
+  def to_string(current = @head, length = @count)
+    phat_beats = "#{current.data}"
+    (length - 1).times do
       current = current.next_node
       phat_beats << " #{current.data}"
     end
     phat_beats
   end
+
+  def find(position, length)
+    current = @head
+    position.times do
+      current = current.next_node
+    end
+    to_string(current, length)
+  end
+
 
   def prepend(data)
     @count += 1
@@ -64,7 +72,10 @@ class LinkedList
     current.next_node = new_node
   end
 
+
   def includes?(beat)
     @node_data.include?(beat)
   end
+
+
 end

@@ -80,7 +80,6 @@ class LinkedListTest < Minitest::Test
   end
 
   def test_find
-    skip
     ll = LinkedList.new
 
     ll.append("deep")
@@ -88,11 +87,31 @@ class LinkedListTest < Minitest::Test
     ll.append("shi")
     ll.append("shu")
     ll.append("blop")
-# binding.pry
+
     assert_equal "deep woo shi shu blop", ll.to_string
     assert_equal "shi", ll.find(2, 1)
     assert_equal "woo shi shu", ll.find(1, 3)
   end
+
+  def test_find_more
+    ll = LinkedList.new
+
+    ll.append("deep")
+    ll.append("woo")
+    ll.append("shi")
+    ll.append("shu")
+    ll.append("blop")
+    ll.prepend("shoop")
+    ll.append("doobie")
+    ll.insert(2, "bebop")
+    ll.append("blah")
+    ll.append("dingle")
+
+    assert_equal "shoop deep bebop woo shi shu blop doobie blah dingle", ll.to_string
+    assert_equal "shu blop doobie blah", ll.find(5, 4)
+    assert_equal "woo shi shu blop doobie blah", ll.find(3, 6)
+  end
+
 
   def test_includes?
     ll = LinkedList.new
