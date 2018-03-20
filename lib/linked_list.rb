@@ -6,13 +6,21 @@ class LinkedList
               :node_data
   def initialize
     @head = nil
-    @count = 0
     @node_data = []
   end
 
+  def count
+    return 0 if @head.nil?
+    current = @head
+    counter = 1
+    until current.next_node.nil?
+      current = current.next_node
+      counter += 1
+    end
+    counter
+  end
+
   def append(data)
-    @node_data << data
-    @count += 1
     current_node = @head
     if @head.nil?
       @head = Node.new(data)
@@ -24,7 +32,8 @@ class LinkedList
     end
   end
 
-  def to_string(current = @head, length = @count)
+  def to_string(current = @head, length = count)
+    return "Nope" if length > count
     phat_beats = "#{current.data}"
     (length - 1).times do
       current = current.next_node
@@ -34,6 +43,7 @@ class LinkedList
   end
 
   def find(position, length)
+    return "Nope" if position >= count
     current = @head
     position.times do
       current = current.next_node
@@ -43,7 +53,6 @@ class LinkedList
 
 
   def prepend(data)
-    @count += 1
     @node_data << data
     if @head.nil?
       @head = Node.new(data)
@@ -55,16 +64,15 @@ class LinkedList
   end
 
   def insert(position, data)
-    @count += 1
     @node_data << data
-    count = 0
+    counter = 0
     current = @head
     if @head.nil?
       @head = Node.new(data)
     elsif
-      until count == position - 1
+      until counter == position - 1
         current = current.next_node
-        count += 1
+        counter += 1
       end
     end
     new_node = Node.new(data)
