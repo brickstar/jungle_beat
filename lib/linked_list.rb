@@ -2,13 +2,16 @@ require './lib/node'
 
 class LinkedList
   attr_reader :head,
-              :count
+              :count,
+              :node_data
   def initialize
     @head = nil
     @count = 0
+    @node_data = []
   end
 
   def append(data)
+    @node_data << data
     @count += 1
     current_node = @head
     if @head.nil?
@@ -33,6 +36,7 @@ class LinkedList
 
   def prepend(data)
     @count += 1
+    @node_data << data
     if @head.nil?
       @head = Node.new(data)
     else
@@ -44,6 +48,7 @@ class LinkedList
 
   def insert(position, data)
     @count += 1
+    @node_data << data
     count = 0
     current = @head
     if @head.nil?
@@ -53,12 +58,13 @@ class LinkedList
         current = current.next_node
         count += 1
       end
-    elsif
-      @count < position
-      "Not Enough Nodes"
     end
     new_node = Node.new(data)
     new_node.next_node = current.next_node
     current.next_node = new_node
+  end
+
+  def includes?(beat)
+    @node_data.include?(beat)
   end
 end

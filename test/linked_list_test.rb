@@ -102,7 +102,8 @@ class LinkedListTest < Minitest::Test
     ll.append("shi")
     ll.append("shu")
     ll.append("blop")
-
+    
+    assert_equal 5, ll.node_data.length
     assert_equal true, ll.includes?("deep")
     assert_equal false, ll.includes?("dep")
   end
