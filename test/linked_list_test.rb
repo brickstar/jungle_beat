@@ -22,9 +22,23 @@ class LinkedListTest < Minitest::Test
     ll.append("doop")
     assert_equal "doop", ll.head.data
     assert_nil ll.head.next_node
+
     ll.append("deep")
     assert_equal "deep", ll.head.next_node.data
     assert_nil ll.head.next_node.next_node
+
+    ll.append("bop")
+    assert_equal "bop", ll.head.next_node.next_node.data
+    assert_nil ll.head.next_node.next_node.next_node
+
+    ll.append("bebop")
+    assert_equal "bebop", ll.head.next_node.next_node.next_node.data
+    assert_nil ll.head.next_node.next_node.next_node.next_node
+
+    ll.append("wham")
+    assert_equal "wham", ll.head.next_node.next_node.next_node.next_node.data
+    assert_nil ll.head.next_node.next_node.next_node.next_node.next_node
+    assert_equal 5, ll.count
   end
 
   def test_to_string
