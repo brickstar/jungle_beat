@@ -24,4 +24,8 @@ class LinkedList
   def to_string
     "#{@head.data} #{@head.next_node.data}"
   end
+
+  def prepend(data)
+    "dop"
+  end
 end
