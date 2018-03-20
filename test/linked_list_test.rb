@@ -39,6 +39,22 @@ class LinkedListTest < Minitest::Test
     ll.append("plop")
     ll.append("suu")
     ll.prepend("dop")
+
     assert_equal "dop plop suu", ll.to_string
+  end
+
+  def test_insert
+    ll = LinkedList.new
+    ll.append("plop")
+    assert_equal "plop", ll.to_string
+    ll.append("suu")
+    ll.prepend("dop")
+
+    assert_equal "dop plop suu", ll.to_string
+    assert_equal 3, ll.count
+    ll.insert(1, "woo")
+
+    assert_equal "dop woo plop suu", ll.to_string
+    assert_equal 4, ll.count
   end
 end
