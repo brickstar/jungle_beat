@@ -22,6 +22,6 @@ class LinkedList
   end
 
   def to_string
-    "doop"
+    "#{@head.data} #{@head.next_node.data}"
   end
 end
