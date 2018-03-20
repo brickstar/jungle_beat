@@ -48,11 +48,14 @@ class LinkedList
     current = @head
     if @head.nil?
       @head = Node.new(data)
-    else
+    elsif
       until count == position - 1
         current = current.next_node
         count += 1
       end
+    elsif
+      @count < position
+      "Not Enough Nodes"
     end
     new_node = Node.new(data)
     new_node.next_node = current.next_node
