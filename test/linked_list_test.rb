@@ -154,9 +154,12 @@ class LinkedListTest < Minitest::Test
     ll.append("shi")
     ll.append("shu")
     ll.append("blop")
-    
+
+    assert_equal 5, ll.count
     assert_equal "blop", ll.pop
+    assert_equal 4, ll.count
     assert_equal "shu", ll.pop
+    assert_equal 3, ll.count
   end
 
   def test_it_can_append_to_empty_list

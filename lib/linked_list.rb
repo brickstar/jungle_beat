@@ -97,6 +97,4 @@ class LinkedList
     current.next_node = nil
     last_node_data
   end
-
-
 end
