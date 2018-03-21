@@ -147,6 +147,7 @@ class LinkedListTest < Minitest::Test
   end
 
   def test_it_can_pop
+    skip
     ll = LinkedList.new
 
     ll.append("deep")
