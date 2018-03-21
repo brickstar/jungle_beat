@@ -92,6 +92,10 @@ class LinkedList
     current = @head
     until current.next_node.next_node.nil?
       current = current.next_node
+    end
+    last_node_data = current.next_node.data
+    current.next_node = nil
+    last_node_data
   end
 
 
