@@ -154,10 +154,7 @@ class LinkedListTest < Minitest::Test
     ll.append("shi")
     ll.append("shu")
     ll.append("blop")
-    # assert_equal "blop", ll.pop
-    # assert_equal "shu", ll.pop
-    # assert_equal "shi", ll.pop
-    # assert_equal "woo", ll.pop
+    
     assert_equal "blop", ll.pop
     assert_equal "shu", ll.pop
   end
