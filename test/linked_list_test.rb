@@ -147,17 +147,16 @@ class LinkedListTest < Minitest::Test
   end
 
   def test_it_can_pop
-    skip
     ll = LinkedList.new
 
     ll.append("deep")
     ll.append("woo")
-    # ll.append("shi")
-    # ll.append("shu")
-    # ll.append("blop")
-    # assert_equal "blop", ll.pop
-    # assert_equal "shu", ll.pop
-    # assert_equal "shi", ll.pop
+    ll.append("shi")
+    ll.append("shu")
+    ll.append("blop")
+    assert_equal "blop", ll.pop
+    assert_equal "shu", ll.pop
+    assert_equal "shi", ll.pop
     assert_equal "woo", ll.pop
     assert_equal "deep", ll.pop
     assert_nil ll.pop
