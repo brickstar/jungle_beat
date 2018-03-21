@@ -15,4 +15,10 @@ class JungleBeatTest < Minitest::Test
 
     assert_instance_of LinkedList, jb.list
   end
+
+  def test_initialized_linked_list_head_starts_nil
+    jb = JungleBeat.new
+
+    assert_nil jb.list.head
+  end
 end
