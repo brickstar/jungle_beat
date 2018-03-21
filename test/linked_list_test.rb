@@ -29,7 +29,12 @@ class LinkedListTest < Minitest::Test
     ll.insert(2, "bebop")
     ll.append("blah")
     ll.append("dingle")
+    
     assert_equal 10, ll.count
+  end
+
+  def test_it_can_append_to_empty_list
+
   end
 
   def test_it_can_append_multiple_nodes_to_the_list
@@ -91,10 +96,27 @@ class LinkedListTest < Minitest::Test
 
     assert_equal "dop plop suu", ll.to_string
     assert_equal 3, ll.count
+
     ll.insert(1, "woo")
     assert_equal "dop woo plop suu", ll.to_string
     assert_equal 4, ll.count
 
+    assert_equal "Nope", ll.insert(100, "bop")
+    assert_equal "dop woo plop suu", ll.to_string
+    assert_equal 4, ll.count
+  end
+
+  def test_it_cannot_insert_beyond_length_of_list
+    ll = LinkedList.new
+
+    ll.append("plop")
+    ll.append("suu")
+    ll.prepend("dop")
+    ll.insert(1, "woo")
+
+    assert_equal "Nope", ll.insert(100, "bop")
+    assert_equal "dop woo plop suu", ll.to_string
+    assert_equal 4, ll.count
   end
 
   def test_find
@@ -163,18 +185,14 @@ class LinkedListTest < Minitest::Test
     assert_equal "shu", ll.pop
     assert_equal 3, ll.count
     assert_equal "deep woo shi", ll.to_string
-    assert_equal "shi", ll.pop
 
+    assert_equal "shi", ll.pop
     assert_equal "woo", ll.pop
     assert_equal "deep", ll.pop
     assert_equal "Nope", ll.pop
     assert_equal "Nope", ll.pop
+    assert_equal "Nope", ll.pop
     assert_nil ll.head
-  end
-
-  def test_it_can_append_to_empty_list
-
-
   end
 
   def test_next_node_after_head_is_nil

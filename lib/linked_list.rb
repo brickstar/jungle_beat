@@ -75,7 +75,6 @@ class LinkedList
     current.next_node = new_node
   end
 
-
   def includes?(phat_beat, current = @head)
     if current.data == phat_beat
       true
