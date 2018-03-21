@@ -107,9 +107,13 @@ class LinkedListTest < Minitest::Test
     assert_equal "dop woo plop suu", ll.to_string
     assert_equal 4, ll.count
 
-    assert_equal "Nope", ll.insert(100, "bop")
-    assert_equal "dop woo plop suu", ll.to_string
-    assert_equal 4, ll.count
+    ll.append("beebop")
+    ll.append("bop")
+    ll.append("Miles Davis")
+    assert_equal 7, ll.count
+
+    ll.insert(6, "Coltrane")
+    assert_equal "dop woo plop suu beebop bop Coltrane Miles Davis", ll.to_string
   end
 
   def test_it_cannot_insert_beyond_length_of_list
