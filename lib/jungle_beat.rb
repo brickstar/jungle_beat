@@ -5,4 +5,12 @@ class JungleBeat
   def initialize
     @list = LinkedList.new
   end
+
+  def append(phat_beats)
+    to_append = phat_beats.split(" ")
+    to_append.each do |beat|
+      @list.append(beat)
+    end
+    phat_beats
+  end
 end
