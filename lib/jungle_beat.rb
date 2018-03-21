@@ -14,6 +14,17 @@ class JungleBeat
     phat_beats
   end
 
+  def count
+    return 0 if list.head.nil?
+    current = list.head
+    counter = 1
+    until current.next_node.nil?
+      current = current.next_node
+      counter += 1
+    end
+    counter
+  end
+
   def play
     phat_beats = ""
     current = list.head
