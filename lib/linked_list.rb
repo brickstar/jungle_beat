@@ -76,6 +76,7 @@ class LinkedList
   end
 
   def includes?(phat_beat, current = @head)
+    return "Nope" if @head.nil?
     if current.data == phat_beat
       true
     elsif current.next_node.nil?

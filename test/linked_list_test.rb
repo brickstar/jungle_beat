@@ -16,7 +16,7 @@ class LinkedListTest < Minitest::Test
     assert_nil ll.head
   end
 
-  def test_count
+  def test_it_can_count_nodes
     ll = LinkedList.new
 
     ll.append("deep")
@@ -29,12 +29,18 @@ class LinkedListTest < Minitest::Test
     ll.insert(2, "bebop")
     ll.append("blah")
     ll.append("dingle")
-    
+
     assert_equal 10, ll.count
   end
 
   def test_it_can_append_to_empty_list
+    ll = LinkedList.new
 
+    assert_nil ll.head
+
+    ll.append("bebop")
+
+    assert_equal "bebop", ll.head.data
   end
 
   def test_it_can_append_multiple_nodes_to_the_list
@@ -74,7 +80,7 @@ class LinkedListTest < Minitest::Test
     assert_equal "doop deep bop bebop wham", ll.to_string
   end
 
-  def test_prepend
+  def test_it_can_prepend
     ll = LinkedList.new
 
     ll.append("plop")
@@ -84,7 +90,7 @@ class LinkedListTest < Minitest::Test
     assert_equal "dop plop suu", ll.to_string
   end
 
-  def test_insert
+  def test_it_can_insert_nodes_at_specified_positions
     ll = LinkedList.new
 
     ll.append("plop")
@@ -119,7 +125,7 @@ class LinkedListTest < Minitest::Test
     assert_equal 4, ll.count
   end
 
-  def test_find
+  def test_it_can_find_nodes
     ll = LinkedList.new
 
     ll.append("deep")
@@ -133,7 +139,7 @@ class LinkedListTest < Minitest::Test
     assert_equal "woo shi shu", ll.find(1, 3)
   end
 
-  def test_find_more
+  def test_find_multiple_nodes
     ll = LinkedList.new
 
     ll.append("deep")
@@ -170,6 +176,13 @@ class LinkedListTest < Minitest::Test
     assert_equal false, ll.includes?("dep")
   end
 
+  def test_empty_list_does_not_include_anything
+    ll = LinkedList.new
+
+    assert_nil ll.head
+    assert_equal "Nope", ll.includes?("bebop")
+  end
+
   def test_it_can_pop
     ll = LinkedList.new
 
@@ -195,23 +208,4 @@ class LinkedListTest < Minitest::Test
     assert_nil ll.head
   end
 
-  def test_next_node_after_head_is_nil
-
-
-  end
-
-  def test_list_can_count
-
-
-  end
-
-  def test_it_can_append_twice
-
-
-  end
-
-  def test_it_can_append_multiple_times
-
-
-  end
 end
