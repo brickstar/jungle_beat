@@ -48,7 +48,6 @@ class LinkedList
     to_string(current, length)
   end
 
-
   def prepend(data)
     if @head.nil?
       @head = Node.new(data)
@@ -60,12 +59,13 @@ class LinkedList
   end
 
   def insert(position, data)
+    return "Nope" if position > count
     counter = 0
     current = @head
     if @head.nil?
       @head = Node.new(data)
     elsif
-      until counter == position - 1
+      (position - 1).times do
         current = current.next_node
         counter += 1
       end
@@ -87,12 +87,19 @@ class LinkedList
   end
 
   def pop
-    current = @head
-    until current.next_node.next_node.nil?
-      current = current.next_node
-    end
-    last_node_data = current.next_node.data
+    return "Nope" if @head.nil?
+    if @head.next_node.nil?
+      phat_beat = "#{@head.data}"
+      @head = nil
+      phat_beat
+    else
+      current = @head
+      until current.next_node.next_node.nil?
+        current = current.next_node
+      end
+    last_node_data = "#{current.next_node.data}"
     current.next_node = nil
     last_node_data
+    end
   end
 end

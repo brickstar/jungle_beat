@@ -53,6 +53,6 @@ class JungleBeatTest < Minitest::Test
     jb.append("deep doo ditt woo hoo shu")
     assert_equal "deep doo ditt woo hoo shu", jb.append("deep doo ditt woo hoo shu")
     jb.append("mississippi")
-    jb.play
+    # jb.play
   end
 end

@@ -83,7 +83,9 @@ class LinkedListTest < Minitest::Test
     ll = LinkedList.new
 
     ll.append("plop")
+
     assert_equal "plop", ll.to_string
+
     ll.append("suu")
     ll.prepend("dop")
 
@@ -92,6 +94,7 @@ class LinkedListTest < Minitest::Test
     ll.insert(1, "woo")
     assert_equal "dop woo plop suu", ll.to_string
     assert_equal 4, ll.count
+
   end
 
   def test_find
@@ -159,6 +162,14 @@ class LinkedListTest < Minitest::Test
     assert_equal 4, ll.count
     assert_equal "shu", ll.pop
     assert_equal 3, ll.count
+    assert_equal "deep woo shi", ll.to_string
+    assert_equal "shi", ll.pop
+
+    assert_equal "woo", ll.pop
+    assert_equal "deep", ll.pop
+    assert_equal "Nope", ll.pop
+    assert_equal "Nope", ll.pop
+    assert_nil ll.head
   end
 
   def test_it_can_append_to_empty_list
