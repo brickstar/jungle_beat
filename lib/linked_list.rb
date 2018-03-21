@@ -2,7 +2,6 @@ require './lib/node'
 
 class LinkedList
   attr_reader :head,
-              :count,
               :node_data
   def initialize
     @head = nil
@@ -20,15 +19,15 @@ class LinkedList
     counter
   end
 
-  def append(data)
+  def append(phat_beat)
     current_node = @head
     if @head.nil?
-      @head = Node.new(data)
+      @head = Node.new(phat_beat)
     else
-      until current_node.next_node == nil
+      until current_node.next_node.nil?
         current_node = current_node.next_node
       end
-      current_node.next_node = Node.new(data)
+      current_node.next_node = Node.new(phat_beat)
     end
   end
 
@@ -43,7 +42,7 @@ class LinkedList
   end
 
   def find(position, length)
-    return "Nope" if position >= count
+    return "Nope" if position > count
     current = @head
     position.times do
       current = current.next_node
@@ -52,37 +51,45 @@ class LinkedList
   end
 
 
-  def prepend(data)
-    @node_data << data
+  def prepend(phat_beat)
+    @node_data << phat_beat
     if @head.nil?
-      @head = Node.new(data)
+      @head = Node.new(phat_beat)
     else
       first_head = @head
-      @head = Node.new(data)
+      @head = Node.new(phat_beat)
       @head.next_node = first_head
     end
   end
 
-  def insert(position, data)
-    @node_data << data
+  def insert(position, phat_beat)
+    @node_data << phat_beat
     counter = 0
     current = @head
     if @head.nil?
-      @head = Node.new(data)
+      @head = Node.new(phat_beat)
     elsif
       until counter == position - 1
         current = current.next_node
         counter += 1
       end
     end
-    new_node = Node.new(data)
+    new_node = Node.new(phat_beat)
     new_node.next_node = current.next_node
     current.next_node = new_node
   end
 
 
-  def includes?(beat)
-    @node_data.include?(beat)
+
+  def includes?(phat_beat, current = @head)
+    #current = head
+    #if current.data == thing true
+    #elsif current.next.nil? false
+    #else current = current.next
+    #includes?(phat_beat, current.next.thing)
+    #else
+    #current = current.next
+    #end
   end
 
 
