@@ -81,7 +81,7 @@ class LinkedList
 
 
 
-  def includes?(phat_beat, current = @head)
+  def includes?(phat_beat, current)
     #current = head
     #if current.data == thing true
     #elsif current.next.nil? false
