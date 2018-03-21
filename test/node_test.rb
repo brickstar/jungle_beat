@@ -1,5 +1,5 @@
-require './test/test_helper'
-require './lib/node'
+require_relative "test_helper"
+require "./lib/node"
 
 class NodeTest < Minitest::Test
 
