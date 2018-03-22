@@ -228,4 +228,30 @@ class LinkedListTest < Minitest::Test
     assert_nil ll.head
   end
 
+  def test_it_cannot_pop_more_nodes_than_in_list
+    ll = LinkedList.new
+
+    ll.append("deep")
+    ll.append("woo")
+    ll.append("shi")
+    ll.append("shu")
+    ll.append("blop")
+
+    assert_equal 5, ll.count
+    assert_equal "blop", ll.pop
+    assert_equal 4, ll.count
+    assert_equal "shu", ll.pop
+    assert_equal 3, ll.count
+    assert_equal "deep woo shi", ll.to_string
+    assert_equal "shi", ll.pop
+    assert_equal 2, ll.count
+    assert_equal "woo", ll.pop
+    assert_equal 1, ll.count
+    assert_equal "deep", ll.pop
+    assert_equal 0, ll.count
+    assert_equal "Nope", ll.pop
+    assert_equal "Nope", ll.pop
+    assert_equal "Nope", ll.pop
+    assert_nil ll.head
+  end
 end
