@@ -1,7 +1,6 @@
 require_relative "test_helper"
 require './lib/linked_list'
 require './lib/node'
-require 'pry'
 
 class LinkedListTest < Minitest::Test
   def test_it_exists

@@ -27,10 +27,10 @@ class JungleBeat
 
   def play
     current = list.head
-    phat_beats = "#{current.phat_beat}"
+    phat_beats = "#{current.data}"
     until current.next_node.nil?
       current = current.next_node
-      phat_beats << current.phat_beat
+      phat_beats << current.data
     end
     `say -r 200 #{phat_beats}`
   end

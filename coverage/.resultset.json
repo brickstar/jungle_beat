@@ -146,18 +146,17 @@
         null,
         null,
         1,
-        0,
-        0,
-        0,
-        0,
-        0,
+        1,
+        1,
+        1,
+        11,
+        11,
         null,
-        0,
+        1,
         null,
         null
       ],
       "/Users/brickstar/turing/module1/projects/jungle_beat/test/linked_list_test.rb": [
-        1,
         1,
         1,
         1,
@@ -429,6 +428,6 @@
         null
       ]
     },
-    "timestamp": 1521723976
+    "timestamp": 1521724255
   }
 }
