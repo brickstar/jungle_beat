@@ -59,7 +59,7 @@ class LinkedList
   end
 
   def insert(position, data)
-    return "Nope" if position > count
+    return "Nope" if position > count + 1
     counter = 0
     current = @head
     if @head.nil?

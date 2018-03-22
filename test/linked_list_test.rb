@@ -127,7 +127,13 @@ class LinkedListTest < Minitest::Test
     assert_equal "Nope", ll.insert(100, "bop")
     assert_equal "dop woo plop suu", ll.to_string
     assert_equal 4, ll.count
+    ll.insert(3, "Coltrane")
+    assert_equal "dop woo plop Coltrane suu", ll.to_string
+    assert_equal "Nope", ll.insert(8, "dinble")
+    assert_equal "dop woo plop Coltrane suu", ll.to_string
   end
+
+
 
   def test_it_can_find_nodes
     ll = LinkedList.new
