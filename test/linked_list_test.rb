@@ -90,6 +90,16 @@ class LinkedListTest < Minitest::Test
     assert_equal "dop plop suu", ll.to_string
   end
 
+  def test_it_can_prepend_an_empty_list
+    ll = LinkedList.new
+
+    assert_nil ll.head
+
+    ll.prepend("beep")
+
+    assert_equal 1, ll.count
+  end
+
   def test_it_can_insert_nodes_at_specified_positions
     ll = LinkedList.new
 
@@ -172,7 +182,7 @@ class LinkedListTest < Minitest::Test
   end
 
 
-  def test_includes?
+  def test_it_includes_phat_beats?
     ll = LinkedList.new
 
     ll.append("deep")

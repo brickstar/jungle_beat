@@ -60,14 +60,13 @@ class LinkedList
 
   def insert(position, data)
     return "Nope" if position > count + 1
-    counter = 0
     current = @head
     if @head.nil?
       @head = Node.new(data)
     elsif
       (position - 1).times do
         current = current.next_node
-        counter += 1
+        # counter += 1
       end
     end
     new_node = Node.new(data)
