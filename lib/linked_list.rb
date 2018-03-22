@@ -31,10 +31,10 @@ class LinkedList
 
   def to_string(current = @head, beat_count = count)
     return "No more phat beats" if beat_count > count
-    phat_beats = "#{current.phat_beat}"
+    phat_beats = "#{current.data}"
     (beat_count - 1).times do
       current = current.next_node
-      phat_beats << " #{current.phat_beat}"
+      phat_beats << " #{current.data}"
     end
     phat_beats
   end
@@ -75,7 +75,7 @@ class LinkedList
 
   def includes?(phat_beat, current = @head)
     return "No phat beats" if @head.nil?
-    if current.phat_beat == phat_beat
+    if current.data == phat_beat
       true
     elsif current.next_node.nil?
       false
@@ -87,7 +87,7 @@ class LinkedList
   def pop
     return "No more phat beats" if @head.nil?
     if @head.next_node.nil?
-      phat_beat = "#{@head.phat_beat}"
+      phat_beat = "#{@head.data}"
       @head = nil
       phat_beat
     else
@@ -95,7 +95,7 @@ class LinkedList
       until current.next_node.next_node.nil?
         current = current.next_node
       end
-    last_node_phat_beat = "#{current.next_node.phat_beat}"
+    last_node_phat_beat = "#{current.next_node.data}"
     current.next_node = nil
     last_node_phat_beat
     end

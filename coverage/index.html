@@ -14,7 +14,7 @@
       <img src="./assets/0.10.2/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2018-03-21T21:52:02-06:00">2018-03-21T21:52:02-06:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2018-03-22T07:06:16-06:00">2018-03-22T07:06:16-06:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -572,7 +572,7 @@
         <li class="covered" data-hits="17" data-linenumber="34">
           <span class="hits">17</span>
           
-          <code class="ruby">    phat_beats = &quot;#{current.phat_beat}&quot;</code>
+          <code class="ruby">    phat_beats = &quot;#{current.data}&quot;</code>
         </li>
       
         <li class="covered" data-hits="17" data-linenumber="35">
@@ -590,7 +590,7 @@
         <li class="covered" data-hits="57" data-linenumber="37">
           <span class="hits">57</span>
           
-          <code class="ruby">      phat_beats &lt;&lt; &quot; #{current.phat_beat}&quot;</code>
+          <code class="ruby">      phat_beats &lt;&lt; &quot; #{current.data}&quot;</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="38">
@@ -836,7 +836,7 @@
         <li class="covered" data-hits="6" data-linenumber="78">
           <span class="hits">6</span>
           
-          <code class="ruby">    if current.phat_beat == phat_beat</code>
+          <code class="ruby">    if current.data == phat_beat</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="79">
@@ -908,7 +908,7 @@
         <li class="covered" data-hits="1" data-linenumber="90">
           <span class="hits">1</span>
           
-          <code class="ruby">      phat_beat = &quot;#{@head.phat_beat}&quot;</code>
+          <code class="ruby">      phat_beat = &quot;#{@head.data}&quot;</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="91">
@@ -956,7 +956,7 @@
         <li class="covered" data-hits="6" data-linenumber="98">
           <span class="hits">6</span>
           
-          <code class="ruby">    last_node_phat_beat = &quot;#{current.next_node.phat_beat}&quot;</code>
+          <code class="ruby">    last_node_phat_beat = &quot;#{current.next_node.data}&quot;</code>
         </li>
       
         <li class="covered" data-hits="6" data-linenumber="99">
@@ -1017,7 +1017,7 @@
         <li class="covered" data-hits="1" data-linenumber="2">
           <span class="hits">1</span>
           
-          <code class="ruby">  attr_reader :phat_beat</code>
+          <code class="ruby">  attr_reader :data</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="3">
@@ -1035,7 +1035,7 @@
         <li class="covered" data-hits="96" data-linenumber="5">
           <span class="hits">96</span>
           
-          <code class="ruby">    @phat_beat = phat_beat</code>
+          <code class="ruby">    @data = phat_beat</code>
         </li>
       
         <li class="covered" data-hits="96" data-linenumber="6">
@@ -1336,7 +1336,7 @@
         <li class="covered" data-hits="1" data-linenumber="43">
           <span class="hits">1</span>
           
-          <code class="ruby">    assert_equal &quot;bebop&quot;, ll.head.phat_beat</code>
+          <code class="ruby">    assert_equal &quot;bebop&quot;, ll.head.data</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="44">
@@ -1378,7 +1378,7 @@
         <li class="covered" data-hits="1" data-linenumber="50">
           <span class="hits">1</span>
           
-          <code class="ruby">    assert_equal &quot;doop&quot;, ll.head.phat_beat</code>
+          <code class="ruby">    assert_equal &quot;doop&quot;, ll.head.data</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="51">
@@ -1402,7 +1402,7 @@
         <li class="covered" data-hits="1" data-linenumber="54">
           <span class="hits">1</span>
           
-          <code class="ruby">    assert_equal &quot;deep&quot;, ll.head.next_node.phat_beat</code>
+          <code class="ruby">    assert_equal &quot;deep&quot;, ll.head.next_node.data</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="55">
@@ -1426,7 +1426,7 @@
         <li class="covered" data-hits="1" data-linenumber="58">
           <span class="hits">1</span>
           
-          <code class="ruby">    assert_equal &quot;bop&quot;, ll.head.next_node.next_node.phat_beat</code>
+          <code class="ruby">    assert_equal &quot;bop&quot;, ll.head.next_node.next_node.data</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="59">
@@ -1450,7 +1450,7 @@
         <li class="covered" data-hits="1" data-linenumber="62">
           <span class="hits">1</span>
           
-          <code class="ruby">    assert_equal &quot;bebop&quot;, ll.head.next_node.next_node.next_node.phat_beat</code>
+          <code class="ruby">    assert_equal &quot;bebop&quot;, ll.head.next_node.next_node.next_node.data</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="63">
@@ -1474,7 +1474,7 @@
         <li class="covered" data-hits="1" data-linenumber="66">
           <span class="hits">1</span>
           
-          <code class="ruby">    assert_equal &quot;wham&quot;, ll.head.next_node.next_node.next_node.next_node.phat_beat</code>
+          <code class="ruby">    assert_equal &quot;wham&quot;, ll.head.next_node.next_node.next_node.next_node.data</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="67">
@@ -2669,7 +2669,7 @@
         <li class="covered" data-hits="1" data-linenumber="11">
           <span class="hits">1</span>
           
-          <code class="ruby">    assert_equal &quot;plop&quot;, Node.new(&quot;plop&quot;).phat_beat</code>
+          <code class="ruby">    assert_equal &quot;plop&quot;, Node.new(&quot;plop&quot;).data</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="12">
