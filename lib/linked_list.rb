@@ -66,7 +66,6 @@ class LinkedList
     elsif
       (position - 1).times do
         current = current.next_node
-        # counter += 1
       end
     end
     new_node = Node.new(data)
