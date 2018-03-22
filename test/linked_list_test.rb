@@ -40,30 +40,30 @@ class LinkedListTest < Minitest::Test
 
     ll.append("bebop")
 
-    assert_equal "bebop", ll.head.data
+    assert_equal "bebop", ll.head.phat_beat
   end
 
   def test_it_can_append_multiple_nodes_to_the_list
     ll = LinkedList.new
 
     ll.append("doop")
-    assert_equal "doop", ll.head.data
+    assert_equal "doop", ll.head.phat_beat
     assert_nil ll.head.next_node
 
     ll.append("deep")
-    assert_equal "deep", ll.head.next_node.data
+    assert_equal "deep", ll.head.next_node.phat_beat
     assert_nil ll.head.next_node.next_node
 
     ll.append("bop")
-    assert_equal "bop", ll.head.next_node.next_node.data
+    assert_equal "bop", ll.head.next_node.next_node.phat_beat
     assert_nil ll.head.next_node.next_node.next_node
 
     ll.append("bebop")
-    assert_equal "bebop", ll.head.next_node.next_node.next_node.data
+    assert_equal "bebop", ll.head.next_node.next_node.next_node.phat_beat
     assert_nil ll.head.next_node.next_node.next_node.next_node
 
     ll.append("wham")
-    assert_equal "wham", ll.head.next_node.next_node.next_node.next_node.data
+    assert_equal "wham", ll.head.next_node.next_node.next_node.next_node.phat_beat
     assert_nil ll.head.next_node.next_node.next_node.next_node.next_node
     assert_equal 5, ll.count
   end
@@ -134,12 +134,12 @@ class LinkedListTest < Minitest::Test
     ll.prepend("dop")
     ll.insert(1, "woo")
 
-    assert_equal "Nope", ll.insert(100, "bop")
+    assert_equal "No phat beats", ll.insert(100, "bop")
     assert_equal "dop woo plop suu", ll.to_string
     assert_equal 4, ll.count
     ll.insert(3, "Coltrane")
     assert_equal "dop woo plop Coltrane suu", ll.to_string
-    assert_equal "Nope", ll.insert(8, "dinble")
+    assert_equal "No phat beats", ll.insert(8, "dinble")
     assert_equal "dop woo plop Coltrane suu", ll.to_string
   end
 
@@ -177,7 +177,9 @@ class LinkedListTest < Minitest::Test
     assert_equal "shoop deep bebop woo shi shu blop doobie blah dingle phat", ll.to_string
     assert_equal "shu blop doobie blah", ll.find(5, 4)
     assert_equal "woo shi shu blop doobie blah", ll.find(3, 6)
-    assert_equal "Nope", ll.find(12, 1)
+
+    assert_equal "No more phat beats", ll.find(12, 1)
+    assert_equal "No more phat beats", ll.find(15, 15)
     assert_equal 11, ll.count
   end
 
@@ -200,7 +202,7 @@ class LinkedListTest < Minitest::Test
     ll = LinkedList.new
 
     assert_nil ll.head
-    assert_equal "Nope", ll.includes?("bebop")
+    assert_equal "No phat beats", ll.includes?("bebop")
   end
 
   def test_it_can_pop
@@ -218,14 +220,6 @@ class LinkedListTest < Minitest::Test
     assert_equal "shu", ll.pop
     assert_equal 3, ll.count
     assert_equal "deep woo shi", ll.to_string
-
-    assert_equal "shi", ll.pop
-    assert_equal "woo", ll.pop
-    assert_equal "deep", ll.pop
-    assert_equal "Nope", ll.pop
-    assert_equal "Nope", ll.pop
-    assert_equal "Nope", ll.pop
-    assert_nil ll.head
   end
 
   def test_it_cannot_pop_more_nodes_than_in_list
@@ -249,9 +243,9 @@ class LinkedListTest < Minitest::Test
     assert_equal 1, ll.count
     assert_equal "deep", ll.pop
     assert_equal 0, ll.count
-    assert_equal "Nope", ll.pop
-    assert_equal "Nope", ll.pop
-    assert_equal "Nope", ll.pop
+    assert_equal "No more phat beats", ll.pop
+    assert_equal "No more phat beats", ll.pop
+    assert_equal "No more phat beats", ll.pop
     assert_nil ll.head
   end
 end

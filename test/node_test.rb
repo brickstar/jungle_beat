@@ -7,8 +7,8 @@ class NodeTest < Minitest::Test
     assert_instance_of Node, Node.new("plop")
   end
 
-  def test_it_has_data
-    assert_equal "plop", Node.new("plop").data
+  def test_it_has_phat_beats
+    assert_equal "plop", Node.new("plop").phat_beat
   end
 
   def test_it_has_a_next_node_and_it_starts_nil

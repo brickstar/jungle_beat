@@ -14,26 +14,26 @@
       <img src="./assets/0.10.2/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2018-03-21T21:28:39-06:00">2018-03-21T21:28:39-06:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2018-03-21T21:52:02-06:00">2018-03-21T21:52:02-06:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
         <div class="file_list_container" id="AllFiles">
   <h2>
     <span class="group_name">All Files</span>
-    (<span class="covered_percent"><span class="green">97.59%</span></span>
+    (<span class="covered_percent"><span class="green">97.54%</span></span>
      covered at
      <span class="covered_strength">
        <span class="green">
-         7.57
+         7.71
        </span>
     </span> hits/line)
   </h2>
   <a name="AllFiles"></a>
   <div>
     <b>5</b> files in total.
-    <b>290</b> relevant lines. 
-    <span class="green"><b>283</b> lines covered</span> and
+    <b>284</b> relevant lines. 
+    <span class="green"><b>277</b> lines covered</span> and
     <span class="red"><b>7</b> lines missed </span>
   </div>
   <table class="file_list">
@@ -83,9 +83,9 @@
       <tr>
         <td class="strong"><a href="#8511f188fae3898102c34186bfe7243def8b05c3" class="src_link" title="test/linked_list_test.rb">test/linked_list_test.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>259</td>
-        <td>181</td>
-        <td>181</td>
+        <td>251</td>
+        <td>175</td>
+        <td>175</td>
         <td>0</td>
         <td>1.0</td>
       </tr>
@@ -307,7 +307,7 @@
         <li class="missed" data-hits="0" data-linenumber="30">
           
           
-          <code class="ruby">    phat_beats = &quot;#{current.data}&quot;</code>
+          <code class="ruby">    phat_beats = &quot;#{current.phat_beat}&quot;</code>
         </li>
       
         <li class="missed" data-hits="0" data-linenumber="31">
@@ -325,7 +325,7 @@
         <li class="missed" data-hits="0" data-linenumber="33">
           
           
-          <code class="ruby">      phat_beats &lt;&lt; current.data</code>
+          <code class="ruby">      phat_beats &lt;&lt; current.phat_beat</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="34">
@@ -425,40 +425,40 @@
           <code class="ruby">  def count</code>
         </li>
       
-        <li class="covered" data-hits="62" data-linenumber="10">
-          <span class="hits">62</span>
+        <li class="covered" data-hits="63" data-linenumber="10">
+          <span class="hits">63</span>
           
           <code class="ruby">    return 0 if @head.nil?</code>
         </li>
       
-        <li class="covered" data-hits="61" data-linenumber="11">
-          <span class="hits">61</span>
+        <li class="covered" data-hits="62" data-linenumber="11">
+          <span class="hits">62</span>
           
           <code class="ruby">    current = @head</code>
         </li>
       
-        <li class="covered" data-hits="61" data-linenumber="12">
-          <span class="hits">61</span>
+        <li class="covered" data-hits="62" data-linenumber="12">
+          <span class="hits">62</span>
           
-          <code class="ruby">    counter = 1</code>
+          <code class="ruby">    phat_beats = 1</code>
         </li>
       
-        <li class="covered" data-hits="61" data-linenumber="13">
-          <span class="hits">61</span>
+        <li class="covered" data-hits="62" data-linenumber="13">
+          <span class="hits">62</span>
           
           <code class="ruby">    until current.next_node.nil?</code>
         </li>
       
-        <li class="covered" data-hits="257" data-linenumber="14">
-          <span class="hits">257</span>
+        <li class="covered" data-hits="267" data-linenumber="14">
+          <span class="hits">267</span>
           
           <code class="ruby">      current = current.next_node</code>
         </li>
       
-        <li class="covered" data-hits="257" data-linenumber="15">
-          <span class="hits">257</span>
+        <li class="covered" data-hits="267" data-linenumber="15">
+          <span class="hits">267</span>
           
-          <code class="ruby">      counter += 1</code>
+          <code class="ruby">      phat_beats += 1</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="16">
@@ -467,10 +467,10 @@
           <code class="ruby">    end</code>
         </li>
       
-        <li class="covered" data-hits="61" data-linenumber="17">
-          <span class="hits">61</span>
+        <li class="covered" data-hits="62" data-linenumber="17">
+          <span class="hits">62</span>
           
-          <code class="ruby">    counter</code>
+          <code class="ruby">    phat_beats</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="18">
@@ -488,7 +488,7 @@
         <li class="covered" data-hits="1" data-linenumber="20">
           <span class="hits">1</span>
           
-          <code class="ruby">  def append(data)</code>
+          <code class="ruby">  def append(phat_beat)</code>
         </li>
       
         <li class="covered" data-hits="81" data-linenumber="21">
@@ -506,7 +506,7 @@
         <li class="covered" data-hits="16" data-linenumber="23">
           <span class="hits">16</span>
           
-          <code class="ruby">      @head = Node.new(data)</code>
+          <code class="ruby">      @head = Node.new(phat_beat)</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="24">
@@ -536,7 +536,7 @@
         <li class="covered" data-hits="65" data-linenumber="28">
           <span class="hits">65</span>
           
-          <code class="ruby">      current_node.next_node = Node.new(data)</code>
+          <code class="ruby">      current_node.next_node = Node.new(phat_beat)</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="29">
@@ -560,25 +560,25 @@
         <li class="covered" data-hits="1" data-linenumber="32">
           <span class="hits">1</span>
           
-          <code class="ruby">  def to_string(current = @head, length = count)</code>
+          <code class="ruby">  def to_string(current = @head, beat_count = count)</code>
         </li>
       
         <li class="covered" data-hits="17" data-linenumber="33">
           <span class="hits">17</span>
           
-          <code class="ruby">    return &quot;Nope&quot; if length &gt; count</code>
+          <code class="ruby">    return &quot;No more phat beats&quot; if beat_count &gt; count</code>
         </li>
       
         <li class="covered" data-hits="17" data-linenumber="34">
           <span class="hits">17</span>
           
-          <code class="ruby">    phat_beats = &quot;#{current.data}&quot;</code>
+          <code class="ruby">    phat_beats = &quot;#{current.phat_beat}&quot;</code>
         </li>
       
         <li class="covered" data-hits="17" data-linenumber="35">
           <span class="hits">17</span>
           
-          <code class="ruby">    (length - 1).times do</code>
+          <code class="ruby">    (beat_count - 1).times do</code>
         </li>
       
         <li class="covered" data-hits="57" data-linenumber="36">
@@ -590,7 +590,7 @@
         <li class="covered" data-hits="57" data-linenumber="37">
           <span class="hits">57</span>
           
-          <code class="ruby">      phat_beats &lt;&lt; &quot; #{current.data}&quot;</code>
+          <code class="ruby">      phat_beats &lt;&lt; &quot; #{current.phat_beat}&quot;</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="38">
@@ -620,13 +620,13 @@
         <li class="covered" data-hits="1" data-linenumber="42">
           <span class="hits">1</span>
           
-          <code class="ruby">  def find(position, length)</code>
+          <code class="ruby">  def find(position, beat_count)</code>
         </li>
       
-        <li class="covered" data-hits="5" data-linenumber="43">
-          <span class="hits">5</span>
+        <li class="covered" data-hits="6" data-linenumber="43">
+          <span class="hits">6</span>
           
-          <code class="ruby">    return &quot;Nope&quot; if position &gt;= count</code>
+          <code class="ruby">    return &quot;No more phat beats&quot; if position &gt; count</code>
         </li>
       
         <li class="covered" data-hits="4" data-linenumber="44">
@@ -656,7 +656,7 @@
         <li class="covered" data-hits="4" data-linenumber="48">
           <span class="hits">4</span>
           
-          <code class="ruby">    to_string(current, length)</code>
+          <code class="ruby">    to_string(current, beat_count)</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="49">
@@ -674,7 +674,7 @@
         <li class="covered" data-hits="1" data-linenumber="51">
           <span class="hits">1</span>
           
-          <code class="ruby">  def prepend(data)</code>
+          <code class="ruby">  def prepend(phat_beat)</code>
         </li>
       
         <li class="covered" data-hits="6" data-linenumber="52">
@@ -686,7 +686,7 @@
         <li class="covered" data-hits="1" data-linenumber="53">
           <span class="hits">1</span>
           
-          <code class="ruby">      @head = Node.new(data)</code>
+          <code class="ruby">      @head = Node.new(phat_beat)</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="54">
@@ -704,7 +704,7 @@
         <li class="covered" data-hits="5" data-linenumber="56">
           <span class="hits">5</span>
           
-          <code class="ruby">      @head = Node.new(data)</code>
+          <code class="ruby">      @head = Node.new(phat_beat)</code>
         </li>
       
         <li class="covered" data-hits="5" data-linenumber="57">
@@ -734,13 +734,13 @@
         <li class="covered" data-hits="1" data-linenumber="61">
           <span class="hits">1</span>
           
-          <code class="ruby">  def insert(position, data)</code>
+          <code class="ruby">  def insert(position, phat_beat)</code>
         </li>
       
         <li class="covered" data-hits="8" data-linenumber="62">
           <span class="hits">8</span>
           
-          <code class="ruby">    return &quot;Nope&quot; if position &gt; count + 1</code>
+          <code class="ruby">    return &quot;No phat beats&quot; if position &gt; count + 1</code>
         </li>
       
         <li class="covered" data-hits="6" data-linenumber="63">
@@ -758,7 +758,7 @@
         <li class="missed" data-hits="0" data-linenumber="65">
           
           
-          <code class="ruby">      @head = Node.new(data)</code>
+          <code class="ruby">      @head = Node.new(phat_beat)</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="66">
@@ -794,7 +794,7 @@
         <li class="covered" data-hits="6" data-linenumber="71">
           <span class="hits">6</span>
           
-          <code class="ruby">    new_node = Node.new(data)</code>
+          <code class="ruby">    new_node = Node.new(phat_beat)</code>
         </li>
       
         <li class="covered" data-hits="6" data-linenumber="72">
@@ -830,13 +830,13 @@
         <li class="covered" data-hits="7" data-linenumber="77">
           <span class="hits">7</span>
           
-          <code class="ruby">    return &quot;Nope&quot; if @head.nil?</code>
+          <code class="ruby">    return &quot;No phat beats&quot; if @head.nil?</code>
         </li>
       
         <li class="covered" data-hits="6" data-linenumber="78">
           <span class="hits">6</span>
           
-          <code class="ruby">    if current.data == phat_beat</code>
+          <code class="ruby">    if current.phat_beat == phat_beat</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="79">
@@ -893,32 +893,32 @@
           <code class="ruby">  def pop</code>
         </li>
       
-        <li class="covered" data-hits="16" data-linenumber="88">
-          <span class="hits">16</span>
+        <li class="covered" data-hits="10" data-linenumber="88">
+          <span class="hits">10</span>
           
-          <code class="ruby">    return &quot;Nope&quot; if @head.nil?</code>
+          <code class="ruby">    return &quot;No more phat beats&quot; if @head.nil?</code>
         </li>
       
-        <li class="covered" data-hits="10" data-linenumber="89">
-          <span class="hits">10</span>
+        <li class="covered" data-hits="7" data-linenumber="89">
+          <span class="hits">7</span>
           
           <code class="ruby">    if @head.next_node.nil?</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="90">
-          <span class="hits">2</span>
+        <li class="covered" data-hits="1" data-linenumber="90">
+          <span class="hits">1</span>
           
-          <code class="ruby">      phat_beat = &quot;#{@head.data}&quot;</code>
+          <code class="ruby">      phat_beat = &quot;#{@head.phat_beat}&quot;</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="91">
-          <span class="hits">2</span>
+        <li class="covered" data-hits="1" data-linenumber="91">
+          <span class="hits">1</span>
           
           <code class="ruby">      @head = nil</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="92">
-          <span class="hits">2</span>
+        <li class="covered" data-hits="1" data-linenumber="92">
+          <span class="hits">1</span>
           
           <code class="ruby">      phat_beat</code>
         </li>
@@ -929,20 +929,20 @@
           <code class="ruby">    else</code>
         </li>
       
-        <li class="covered" data-hits="8" data-linenumber="94">
-          <span class="hits">8</span>
+        <li class="covered" data-hits="6" data-linenumber="94">
+          <span class="hits">6</span>
           
           <code class="ruby">      current = @head</code>
         </li>
       
-        <li class="covered" data-hits="8" data-linenumber="95">
-          <span class="hits">8</span>
+        <li class="covered" data-hits="6" data-linenumber="95">
+          <span class="hits">6</span>
           
           <code class="ruby">      until current.next_node.next_node.nil?</code>
         </li>
       
-        <li class="covered" data-hits="12" data-linenumber="96">
-          <span class="hits">12</span>
+        <li class="covered" data-hits="11" data-linenumber="96">
+          <span class="hits">11</span>
           
           <code class="ruby">        current = current.next_node</code>
         </li>
@@ -953,22 +953,22 @@
           <code class="ruby">      end</code>
         </li>
       
-        <li class="covered" data-hits="8" data-linenumber="98">
-          <span class="hits">8</span>
+        <li class="covered" data-hits="6" data-linenumber="98">
+          <span class="hits">6</span>
           
-          <code class="ruby">    last_node_data = &quot;#{current.next_node.data}&quot;</code>
+          <code class="ruby">    last_node_phat_beat = &quot;#{current.next_node.phat_beat}&quot;</code>
         </li>
       
-        <li class="covered" data-hits="8" data-linenumber="99">
-          <span class="hits">8</span>
+        <li class="covered" data-hits="6" data-linenumber="99">
+          <span class="hits">6</span>
           
           <code class="ruby">    current.next_node = nil</code>
         </li>
       
-        <li class="covered" data-hits="8" data-linenumber="100">
-          <span class="hits">8</span>
+        <li class="covered" data-hits="6" data-linenumber="100">
+          <span class="hits">6</span>
           
-          <code class="ruby">    last_node_data</code>
+          <code class="ruby">    last_node_phat_beat</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="101">
@@ -1017,7 +1017,7 @@
         <li class="covered" data-hits="1" data-linenumber="2">
           <span class="hits">1</span>
           
-          <code class="ruby">  attr_reader :data</code>
+          <code class="ruby">  attr_reader :phat_beat</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="3">
@@ -1035,7 +1035,7 @@
         <li class="covered" data-hits="96" data-linenumber="5">
           <span class="hits">96</span>
           
-          <code class="ruby">    @data = phat_beat</code>
+          <code class="ruby">    @phat_beat = phat_beat</code>
         </li>
       
         <li class="covered" data-hits="96" data-linenumber="6">
@@ -1072,8 +1072,8 @@
     <h3>test/linked_list_test.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
     <div>
-      <b>181</b> relevant lines. 
-      <span class="green"><b>181</b> lines covered</span> and
+      <b>175</b> relevant lines. 
+      <span class="green"><b>175</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
@@ -1336,7 +1336,7 @@
         <li class="covered" data-hits="1" data-linenumber="43">
           <span class="hits">1</span>
           
-          <code class="ruby">    assert_equal &quot;bebop&quot;, ll.head.data</code>
+          <code class="ruby">    assert_equal &quot;bebop&quot;, ll.head.phat_beat</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="44">
@@ -1378,7 +1378,7 @@
         <li class="covered" data-hits="1" data-linenumber="50">
           <span class="hits">1</span>
           
-          <code class="ruby">    assert_equal &quot;doop&quot;, ll.head.data</code>
+          <code class="ruby">    assert_equal &quot;doop&quot;, ll.head.phat_beat</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="51">
@@ -1402,7 +1402,7 @@
         <li class="covered" data-hits="1" data-linenumber="54">
           <span class="hits">1</span>
           
-          <code class="ruby">    assert_equal &quot;deep&quot;, ll.head.next_node.data</code>
+          <code class="ruby">    assert_equal &quot;deep&quot;, ll.head.next_node.phat_beat</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="55">
@@ -1426,7 +1426,7 @@
         <li class="covered" data-hits="1" data-linenumber="58">
           <span class="hits">1</span>
           
-          <code class="ruby">    assert_equal &quot;bop&quot;, ll.head.next_node.next_node.data</code>
+          <code class="ruby">    assert_equal &quot;bop&quot;, ll.head.next_node.next_node.phat_beat</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="59">
@@ -1450,7 +1450,7 @@
         <li class="covered" data-hits="1" data-linenumber="62">
           <span class="hits">1</span>
           
-          <code class="ruby">    assert_equal &quot;bebop&quot;, ll.head.next_node.next_node.next_node.data</code>
+          <code class="ruby">    assert_equal &quot;bebop&quot;, ll.head.next_node.next_node.next_node.phat_beat</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="63">
@@ -1474,7 +1474,7 @@
         <li class="covered" data-hits="1" data-linenumber="66">
           <span class="hits">1</span>
           
-          <code class="ruby">    assert_equal &quot;wham&quot;, ll.head.next_node.next_node.next_node.next_node.data</code>
+          <code class="ruby">    assert_equal &quot;wham&quot;, ll.head.next_node.next_node.next_node.next_node.phat_beat</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="67">
@@ -1900,7 +1900,7 @@
         <li class="covered" data-hits="1" data-linenumber="137">
           <span class="hits">1</span>
           
-          <code class="ruby">    assert_equal &quot;Nope&quot;, ll.insert(100, &quot;bop&quot;)</code>
+          <code class="ruby">    assert_equal &quot;No phat beats&quot;, ll.insert(100, &quot;bop&quot;)</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="138">
@@ -1930,7 +1930,7 @@
         <li class="covered" data-hits="1" data-linenumber="142">
           <span class="hits">1</span>
           
-          <code class="ruby">    assert_equal &quot;Nope&quot;, ll.insert(8, &quot;dinble&quot;)</code>
+          <code class="ruby">    assert_equal &quot;No phat beats&quot;, ll.insert(8, &quot;dinble&quot;)</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="143">
@@ -2155,322 +2155,322 @@
           <code class="ruby">    assert_equal &quot;woo shi shu blop doobie blah&quot;, ll.find(3, 6)</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="180">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="180">
           
-          <code class="ruby">    assert_equal &quot;Nope&quot;, ll.find(12, 1)</code>
+          
+          <code class="ruby"></code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="181">
           <span class="hits">1</span>
           
+          <code class="ruby">    assert_equal &quot;No more phat beats&quot;, ll.find(12, 1)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="182">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    assert_equal &quot;No more phat beats&quot;, ll.find(15, 15)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="183">
+          <span class="hits">1</span>
+          
           <code class="ruby">    assert_equal 11, ll.count</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="182">
-          
-          
-          <code class="ruby">  end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="183">
-          
-          
-          <code class="ruby"></code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="184">
           
           
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="185">
+          
+          
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="185">
+        <li class="never" data-hits="" data-linenumber="186">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="187">
           <span class="hits">1</span>
           
           <code class="ruby">  def test_it_includes_phat_beats?</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="186">
+        <li class="covered" data-hits="1" data-linenumber="188">
           <span class="hits">1</span>
           
           <code class="ruby">    ll = LinkedList.new</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="187">
+        <li class="never" data-hits="" data-linenumber="189">
           
           
           <code class="ruby"></code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="188">
-          <span class="hits">1</span>
-          
-          <code class="ruby">    ll.append(&quot;deep&quot;)</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="189">
-          <span class="hits">1</span>
-          
-          <code class="ruby">    ll.append(&quot;woo&quot;)</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="190">
           <span class="hits">1</span>
           
-          <code class="ruby">    ll.append(&quot;shi&quot;)</code>
+          <code class="ruby">    ll.append(&quot;deep&quot;)</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="191">
           <span class="hits">1</span>
           
-          <code class="ruby">    ll.append(&quot;shu&quot;)</code>
+          <code class="ruby">    ll.append(&quot;woo&quot;)</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="192">
           <span class="hits">1</span>
           
-          <code class="ruby">    ll.append(&quot;blop&quot;)</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="193">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="194">
-          <span class="hits">1</span>
-          
-          <code class="ruby">    assert_equal 5, ll.count</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="195">
-          <span class="hits">1</span>
-          
-          <code class="ruby">    assert_equal true, ll.includes?(&quot;deep&quot;)</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="196">
-          <span class="hits">1</span>
-          
-          <code class="ruby">    assert_equal false, ll.includes?(&quot;dep&quot;)</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="197">
-          
-          
-          <code class="ruby">  end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="198">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="199">
-          <span class="hits">1</span>
-          
-          <code class="ruby">  def test_empty_list_does_not_include_anything</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="200">
-          <span class="hits">1</span>
-          
-          <code class="ruby">    ll = LinkedList.new</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="201">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="202">
-          <span class="hits">1</span>
-          
-          <code class="ruby">    assert_nil ll.head</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="203">
-          <span class="hits">1</span>
-          
-          <code class="ruby">    assert_equal &quot;Nope&quot;, ll.includes?(&quot;bebop&quot;)</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="204">
-          
-          
-          <code class="ruby">  end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="205">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="206">
-          <span class="hits">1</span>
-          
-          <code class="ruby">  def test_it_can_pop</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="207">
-          <span class="hits">1</span>
-          
-          <code class="ruby">    ll = LinkedList.new</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="208">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="209">
-          <span class="hits">1</span>
-          
-          <code class="ruby">    ll.append(&quot;deep&quot;)</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="210">
-          <span class="hits">1</span>
-          
-          <code class="ruby">    ll.append(&quot;woo&quot;)</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="211">
-          <span class="hits">1</span>
-          
           <code class="ruby">    ll.append(&quot;shi&quot;)</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="212">
+        <li class="covered" data-hits="1" data-linenumber="193">
           <span class="hits">1</span>
           
           <code class="ruby">    ll.append(&quot;shu&quot;)</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="213">
+        <li class="covered" data-hits="1" data-linenumber="194">
           <span class="hits">1</span>
           
           <code class="ruby">    ll.append(&quot;blop&quot;)</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="214">
+        <li class="never" data-hits="" data-linenumber="195">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="215">
+        <li class="covered" data-hits="1" data-linenumber="196">
           <span class="hits">1</span>
           
           <code class="ruby">    assert_equal 5, ll.count</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="216">
+        <li class="covered" data-hits="1" data-linenumber="197">
           <span class="hits">1</span>
           
-          <code class="ruby">    assert_equal &quot;blop&quot;, ll.pop</code>
+          <code class="ruby">    assert_equal true, ll.includes?(&quot;deep&quot;)</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="217">
+        <li class="covered" data-hits="1" data-linenumber="198">
           <span class="hits">1</span>
           
-          <code class="ruby">    assert_equal 4, ll.count</code>
+          <code class="ruby">    assert_equal false, ll.includes?(&quot;dep&quot;)</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="218">
-          <span class="hits">1</span>
-          
-          <code class="ruby">    assert_equal &quot;shu&quot;, ll.pop</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="219">
-          <span class="hits">1</span>
-          
-          <code class="ruby">    assert_equal 3, ll.count</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="220">
-          <span class="hits">1</span>
-          
-          <code class="ruby">    assert_equal &quot;deep woo shi&quot;, ll.to_string</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="221">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="222">
-          <span class="hits">1</span>
-          
-          <code class="ruby">    assert_equal &quot;shi&quot;, ll.pop</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="223">
-          <span class="hits">1</span>
-          
-          <code class="ruby">    assert_equal &quot;woo&quot;, ll.pop</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="224">
-          <span class="hits">1</span>
-          
-          <code class="ruby">    assert_equal &quot;deep&quot;, ll.pop</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="225">
-          <span class="hits">1</span>
-          
-          <code class="ruby">    assert_equal &quot;Nope&quot;, ll.pop</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="226">
-          <span class="hits">1</span>
-          
-          <code class="ruby">    assert_equal &quot;Nope&quot;, ll.pop</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="227">
-          <span class="hits">1</span>
-          
-          <code class="ruby">    assert_equal &quot;Nope&quot;, ll.pop</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="228">
-          <span class="hits">1</span>
-          
-          <code class="ruby">    assert_nil ll.head</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="229">
+        <li class="never" data-hits="" data-linenumber="199">
           
           
           <code class="ruby">  end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="230">
+        <li class="never" data-hits="" data-linenumber="200">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="231">
+        <li class="covered" data-hits="1" data-linenumber="201">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def test_empty_list_does_not_include_anything</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="202">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    ll = LinkedList.new</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="203">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="204">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    assert_nil ll.head</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="205">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    assert_equal &quot;No phat beats&quot;, ll.includes?(&quot;bebop&quot;)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="206">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="207">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="208">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  def test_it_can_pop</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="209">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    ll = LinkedList.new</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="210">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="211">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    ll.append(&quot;deep&quot;)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="212">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    ll.append(&quot;woo&quot;)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="213">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    ll.append(&quot;shi&quot;)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="214">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    ll.append(&quot;shu&quot;)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="215">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    ll.append(&quot;blop&quot;)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="216">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="217">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    assert_equal 5, ll.count</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="218">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    assert_equal &quot;blop&quot;, ll.pop</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="219">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    assert_equal 4, ll.count</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="220">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    assert_equal &quot;shu&quot;, ll.pop</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="221">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    assert_equal 3, ll.count</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="222">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    assert_equal &quot;deep woo shi&quot;, ll.to_string</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="223">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="224">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="225">
           <span class="hits">1</span>
           
           <code class="ruby">  def test_it_cannot_pop_more_nodes_than_in_list</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="232">
+        <li class="covered" data-hits="1" data-linenumber="226">
           <span class="hits">1</span>
           
           <code class="ruby">    ll = LinkedList.new</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="227">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="228">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    ll.append(&quot;deep&quot;)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="229">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    ll.append(&quot;woo&quot;)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="230">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    ll.append(&quot;shi&quot;)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="231">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    ll.append(&quot;shu&quot;)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="232">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    ll.append(&quot;blop&quot;)</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="233">
@@ -2482,154 +2482,106 @@
         <li class="covered" data-hits="1" data-linenumber="234">
           <span class="hits">1</span>
           
-          <code class="ruby">    ll.append(&quot;deep&quot;)</code>
+          <code class="ruby">    assert_equal 5, ll.count</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="235">
           <span class="hits">1</span>
           
-          <code class="ruby">    ll.append(&quot;woo&quot;)</code>
+          <code class="ruby">    assert_equal &quot;blop&quot;, ll.pop</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="236">
           <span class="hits">1</span>
           
-          <code class="ruby">    ll.append(&quot;shi&quot;)</code>
+          <code class="ruby">    assert_equal 4, ll.count</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="237">
           <span class="hits">1</span>
           
-          <code class="ruby">    ll.append(&quot;shu&quot;)</code>
+          <code class="ruby">    assert_equal &quot;shu&quot;, ll.pop</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="238">
           <span class="hits">1</span>
           
-          <code class="ruby">    ll.append(&quot;blop&quot;)</code>
+          <code class="ruby">    assert_equal 3, ll.count</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="239">
           <span class="hits">1</span>
           
-          <code class="ruby">    assert_equal 5, ll.count</code>
+          <code class="ruby">    assert_equal &quot;deep woo shi&quot;, ll.to_string</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="240">
           <span class="hits">1</span>
           
-          <code class="ruby">    assert_equal &quot;blop&quot;, ll.pop</code>
+          <code class="ruby">    assert_equal &quot;shi&quot;, ll.pop</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="241">
           <span class="hits">1</span>
           
-          <code class="ruby">    assert_equal 4, ll.count</code>
+          <code class="ruby">    assert_equal 2, ll.count</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="242">
           <span class="hits">1</span>
           
-          <code class="ruby">    assert_equal &quot;shu&quot;, ll.pop</code>
+          <code class="ruby">    assert_equal &quot;woo&quot;, ll.pop</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="243">
           <span class="hits">1</span>
           
-          <code class="ruby">    assert_equal 3, ll.count</code>
+          <code class="ruby">    assert_equal 1, ll.count</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="244">
           <span class="hits">1</span>
           
-          <code class="ruby">    assert_equal &quot;deep woo shi&quot;, ll.to_string</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="245">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="246">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="247">
-          <span class="hits">1</span>
-          
-          <code class="ruby">    assert_equal &quot;shi&quot;, ll.pop</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="248">
-          <span class="hits">1</span>
-          
-          <code class="ruby">    assert_equal 2, ll.count</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="249">
-          <span class="hits">1</span>
-          
-          <code class="ruby">    assert_equal &quot;woo&quot;, ll.pop</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="250">
-          <span class="hits">1</span>
-          
-          <code class="ruby">    assert_equal 1, ll.count</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="251">
-          <span class="hits">1</span>
-          
           <code class="ruby">    assert_equal &quot;deep&quot;, ll.pop</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="252">
+        <li class="covered" data-hits="1" data-linenumber="245">
           <span class="hits">1</span>
           
           <code class="ruby">    assert_equal 0, ll.count</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="253">
+        <li class="covered" data-hits="1" data-linenumber="246">
           <span class="hits">1</span>
           
-          <code class="ruby">    assert_equal &quot;Nope&quot;, ll.pop</code>
+          <code class="ruby">    assert_equal &quot;No more phat beats&quot;, ll.pop</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="254">
+        <li class="covered" data-hits="1" data-linenumber="247">
           <span class="hits">1</span>
           
-          <code class="ruby">    assert_equal &quot;Nope&quot;, ll.pop</code>
+          <code class="ruby">    assert_equal &quot;No more phat beats&quot;, ll.pop</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="255">
+        <li class="covered" data-hits="1" data-linenumber="248">
           <span class="hits">1</span>
           
-          <code class="ruby">    assert_equal &quot;Nope&quot;, ll.pop</code>
+          <code class="ruby">    assert_equal &quot;No more phat beats&quot;, ll.pop</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="256">
+        <li class="covered" data-hits="1" data-linenumber="249">
           <span class="hits">1</span>
           
           <code class="ruby">    assert_nil ll.head</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="257">
-          
-          
-          <code class="ruby"></code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="258">
+        <li class="never" data-hits="" data-linenumber="250">
           
           
           <code class="ruby">  end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="259">
+        <li class="never" data-hits="" data-linenumber="251">
           
           
           <code class="ruby">end</code>
@@ -2711,13 +2663,13 @@
         <li class="covered" data-hits="1" data-linenumber="10">
           <span class="hits">1</span>
           
-          <code class="ruby">  def test_it_has_data</code>
+          <code class="ruby">  def test_it_has_phat_beats</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="11">
           <span class="hits">1</span>
           
-          <code class="ruby">    assert_equal &quot;plop&quot;, Node.new(&quot;plop&quot;).data</code>
+          <code class="ruby">    assert_equal &quot;plop&quot;, Node.new(&quot;plop&quot;).phat_beat</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="12">
